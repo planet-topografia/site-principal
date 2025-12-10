@@ -1,0 +1,758 @@
+/********** Template CSS **********/
+:root {
+    --primary: #10aaa8;
+    --secondary: #BDBDBF;
+    --light: #000000;
+    --dark: #222429;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+h5.text-primary.text-uppercase {
+    color: #10aaa8;
+}
+h1.display-3.text-uppercase.mb-0 {
+    color: #050a0e;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+.fundo {
+    background-color: #222429;
+}
+.fundodesempenho {
+    background-color: #222429;
+}
+
+
+.p-152 {
+    width: 900px;
+    margin: 0 auto;
+}
+.area-video {
+     
+    text-align: center;
+}
+
+
+.text-light1{color: #4433;
+font-size: 15px!important}
+.nav-pills .nav-link {
+    
+    border: 1px solid;
+    border-radius: 0.25rem;
+    background-color: #050a0e;
+}
+
+.text-title{
+
+color: #4433;
+
+    }
+
+.teste12{
+fill: #3233;
+color: #323f;
+    }
+
+
+h5.text-primary.text-uppercase {
+    color: #10aaa8!important;
+}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.btn {
+    
+    text-transform: uppercase;
+    transition: .5s;
+}
+.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    background-color: transparent;
+    background-image: linear-gradient(310deg, #12A99F 0%, #FFFFFF 96%)!important;
+}
+
+
+.fa-brands, .fab {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.btn-primary:active {
+    color: #9bfffe;
+    background-color: #10aaa8;
+    border-color: #9bfffe;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #10aaa8;
+    border-color: #9bfffe;
+}
+
+
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    
+    margin-right: 30px;
+    padding: 20px 0;
+    color: var(--light);
+    font-size: 13px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+ 
+
+
+.tawk-min-container {
+    DISPLAY: NONE;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 36, 41, .8);
+    z-index: 1;
+}
+ 
+@media (max-width: 576px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+        font-weight: 500 !important;
+    }
+    .banner img:nth-child(2) {
+    visibility: visible;
+}
+    .carousel-caption h1 {
+        font-size: 17px;
+        font-weight: 600 !important;
+    }
+    .w-100 {
+    
+    height: inherit;
+}
+ 
+.p-152 {
+    width: auto;
+    margin: 0 auto;
+}
+
+.py-5 {
+  
+    flex-wrap: wrap;
+    
+}
+
+.p-5 {
+    padding: 2rem !important;
+}
+.portfolio-title {
+    position: initial;
+   
+}
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-hero {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/carousel-1.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.bg-hero-quem-somos {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/planet-topografia-papel-de-parede.jpg) top center no-repeat;
+    background-size: cover;
+}
+.bg-hero-projetos-entregues {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/acompanhamento-de-obra-topografia-em-sao-paulo-planet-topografia.jpg) top center no-repeat;
+    background-size: cover;
+}
+.bg-hero-fale-conosco {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/planet-topografia-em-sao-paulo-fale-conosco.jpg) top center no-repeat;
+    background-size: cover;
+}
+.bg-hero-georeferenciamento-urbano {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/georreferenciamento-de-imoveis-rurais-planet-topografia.jpg) top center no-repeat;
+    background-size: cover;
+}
+.bg-hero-drone {
+   background: linear-gradient(rgb(255 255 255 / 80%), rgb(252 255 255)), url(../img/mapeamento-3d-topografia-em-sao-paulo-planet.jpg) top center no-repeat;
+}
+
+.programe::after {
+    position :absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 135px;
+    left: 0;
+    background: var(--dark);
+    z-index: -1;
+}
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.2);
+}
+
+.grid-item:hover {
+    border: 1px solid #10aaa8;
+}
+.team-item .team-overlay {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 36, 41, .9);
+    transition: .5s;
+    opacity: 0;
+}
+
+.team-item:hover .team-overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next{
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+}
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+
+@media (min-width: 991.98px) {
+    .credit {
+        background: var(--primary);
+    }
+}
+
+
+ 
+ 
+
+/* Se for copiar, copie a partir daqui */
+
+.btn-whats{
+  background-color: #25D366;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border-radius: 800px;
+  padding: 20px;
+  top: 75%;
+  
+  position: fixed;
+  transition: all .6s;
+  animation: 2s btn-whats;
+  animation-fill-mode: both;
+ 
+  z-index: 1;
+}.btn-whats:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.pulse{
+  animation: pulse 2s infinite;
+}
+.btn-whats > i{
+  position: relative;
+  font-size: 2.0rem;
+  margin: -48px -9px;
+      color: #fff;
+}
+@media only screen and (min-width: 900px){
+
+.col-forma {
+    max-width: 322px;
+       padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+  .btn-whats{
+    left: 95%;
+  }
+  
+}
+
+@media only screen and (max-width: 700px){
+  .btn-whats{
+    left: 85%;
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .btn-whats{
+    left: 80%;
+  }
+  
+}
+
+@media only screen and (max-width: 350px){
+  .btn-whats{
+    left: 75%;
+  }
+}
+/* Animações */
+@keyframes btn-whats{
+  10%{
+    transform: translate(0, 200px); 
+  }
+  50%{
+    transform: translate(0, -40px);
+  }
+  
+  70%{
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  50%{
+    transform: scale(1.1);
+  }
+}
+
+
+span.text-body {
+    color: #f4f5f8!important;
+}
+
+/* INICIO CLIENTES */
+
+.dd {
+    text-align: center;
+}
+
+
+
+
+
+/* PORTFOLIO */
+ 
+  .portfolio-title {
+ position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 0 8px;
+    right: 0px;
+    left: 0px;
+     
+    bottom: -11px;
+    background: #222429;
+    z-index: 0;
+}
+.portfolio-btn {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    font-size: 120px;
+    line-height: 0;
+    transition: .1s;
+    transition-delay: .3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+}
+
+.portfolio-box::before,
+.portfolio-box::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    transition: .5s;
+    z-index: 1;
+    background: rgba(4, 15, 40, .7);
+}
+.portfolio-box::before {
+    left: 0;
+}
+
+.portfolio-box::after {
+    right: 0;
+}
+
+.portfolio-item:hover .portfolio-box::before {
+    left: 0;
+    width: 50%;
+}
+
+.portfolio-item:hover .portfolio-box::after {
+    right: 0;
+    width: 50%;
+}
+.btn {
+    position: relative;
+   
+    text-transform: uppercase;
+    transition: .5s;
+}
+.btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    bottom: -1px;
+    left: 50%;
+    background: var(--primary);
+    transition: .5s;
+}
+.btn.btn-primary::after {
+    background: var(--dark);
+}
+
+.btn:hover::after,
+.btn.active::after {
+    width: 50%;
+    left: 25%;
+}
+ 
+ 
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+ .bg-dark-radial {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+  
+    background-size: 3px 3px;
+}
+
+/* PORTFOLIO */
+
+
+
+
+
+
+
+
+.btn-primary {
+    color: #ffffff!important;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.menu {
+    margin-right: 30px;
+     
+    color: var(--light);
+    font-size: 13px;
+    text-transform: uppercase;
+    outline: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+ a.btn.botaowhats {
+color: #000;
+    background-color: #10aaa8; 
+    text-transform: none;
+    animation: pulse 1.7s infinite; 
+    animation-direction: alternate;
+    -webkit-animation-name: pulse; 
+}
+
+
+a.btn.botaowhats:hover{
+color: #ffffff;
+
+
+}
+
+.btn.btn-primary::after {
+    background: #9bfffe;
+}
+.btn:hover::after {
+    width: 50%;
+    left: 25%;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  padding: 0px;
+  display: block;
+}
+ 
+ 
+ 
+
+
+.menu li{
+position:relative;
+float:left; 
+z-index: 9999!important;
+}
+
+
+.menu li a{height: 24px;color:#333; text-decoration:none;   display:block;}
+
+.menu li a:hover{
+background: #10aaa8;
+    color: #fff;
+}
+
+.menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border: 0.1px solid #f9f9f9;
+    display: block;
+    width: 100%;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tabcontent h3 {
+    color: #555555;
+    font-size: 19px;
+}
+
+ .tabcontent {
+    border: 1px solid;
+    font-size: 12px;
+}
+
+
+.tabs {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 9px;
+    transition: 0.3s;
+    width: 20%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tablink.active {
+    background-color: #10aaa8;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+ 
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .tablink {
+        width: 50%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tablink {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

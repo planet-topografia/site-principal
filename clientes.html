@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nossos Clientes - Planet Topografia</title>
+    <meta name="description" content="Planet Topografia: serviços precisos de agrimensura com mais de 10 anos de experiência, equipe qualificada e equipamentos de alta precisão.">
+        <!-- Favicon -->
+    <link rel="icon" href="https://www.planet-topografia.com.br/img/favicon.png" />
+    <link rel="preload" as="image" href="https://www.planet-topografia.com.br/img/planet-topografia-papel-de-parede.webp">
+
+
+    <style>
+          /* INICIO GERAL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+
+    .text-center {
+        text-align: center !important;
+        margin-bottom: 3rem !important;
+        margin-top: 6rem !important;
+        color: #10aaa8 !important;
+    }
+    a {
+        text-decoration: none;
+        color: #10aaa8
+    }
+
+    .mb-4{margin-bottom:1.5rem !important}
+
+        span.sub-titulo-dif {
+        font-weight: 100;
+        font-size: 1.85rem;
+    }
+
+    .text-primary.text-uppercase {
+        color: #10aaa8 !important;
+        font-size: 1.25rem;
+
+    }
+    .display-3 {
+        color: #050a0e;
+        font-size: 2em!important;
+    }
+    .text-nov
+    {
+        color: #000;
+    }
+
+
+    /* Container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* Cabeçalho */
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        background-image: linear-gradient(310deg, #12A99F 0%, #FFFFFF 96%);
+    }
+
+    .logo {
+        text-align: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info {
+        display: grid;
+        grid-template-rows: auto auto;
+
+    }
+
+    .info .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #10aaa8;
+        padding: 14px 26px;
+        color: #f9f9f9;
+        padding-right: 6rem !important;
+    }
+
+    .info .top .social-icons {
+        display: flex;
+        gap: 4px;
+    }
+
+    a.bord-icons {
+        border: 1px solid #3b0000;
+        border-radius: 50% !important;
+        padding: 7px 0px;
+        display: flex;
+    }
+    img.icon-top-principal {
+        width: 29px;
+        height: 16px;
+    }
+    .info .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 0px;
+        padding-right: 6rem !important;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-size: 0.775rem;
+    padding: 4px 10px;
+    display: flex
+;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    nav ul li a:hover {
+        color: #005453;
+    }
+
+
+    nav ul li a.active {
+        color: #fff;
+    }
+
+    nav ul  li > a::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 0;
+        top: 5px;
+        background: transparent;
+        transition: all 0.3s;
+    }
+
+    nav ul  li  > a:hover::after, li > a.active-nav::after {
+        width: 100%;
+        background: #9bfffe;
+    }
+
+
+        .btn-orcamento {
+        padding: 6px 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 100;
+        transition: background-color 0.3s;
+            background-color: #14262a;
+    border: 1px solid #000000;
+    }
+
+    .btn-orcamento:hover {
+        background-color: #00a09e;
+    }
+
+    /* Estilos do menu responsivo */
+    .menu-toggle {
+      display: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 37px;
+    background-color: #5ec5be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    }
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+    nav {
+      position: relative;
+    }
+
+    nav ul {
+      flex-direction: row;
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr;
+        text-align: center;
+               padding: 27px;
+      }
+.info   {
+
+    display: none;
+}
+
+      .menu-toggle {
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        /* float: right !important;*/
+      }
+
+
+
+
+
+
+
+      nav ul {
+display: none;
+        flex-direction: column;
+        /* background-color: #fff; */
+        /* border: 1px solid #ddd; */
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+
+        position: relative;
+
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      nav ul li:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+
+.menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+.navMenu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .navMenu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .navMenu ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navMenu ul li a:hover {
+      color: #007BFF;
+    }
+
+    .navMenu .close-menu {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #333;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+
+
+
+        @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navMenu {
+        width: 75%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu li{
+position:relative;
+/*float:left; */
+z-index: 9999!important;
+}
+
+
+.menu li a{height: 24px;color:#333; text-decoration:none;   display:block;}
+
+.menu li a:hover{
+background: #10aaa8;
+    color: #fff;
+}
+
+.menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+width: max-content;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border: 0.1px solid #f9f9f9;
+    display: block;
+    width: 100%;
+}
+
+p.sub-principal {
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Inicio banner topo */
+/* Banner topo otimizado */
+.banner-topo-para {
+    position: relative;
+
+    background-image: url('https://www.planet-topografia.com.br/img/planet-topografia-papel-de-parede.webp'); /* Imagem otimizada */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.banner-topo-para .banner-topo-para-wrapper {
+    width: 100%;
+}
+
+.banner-topo-para .banner-topo-para-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 58px;
+    border-radius: 8px;
+
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.banner-topo-para h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner-topo-para .banner-topo-para-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.banner-topo-para .banner-topo-para-buttons a {
+    text-decoration: none;
+    color: #c8ebe9;
+    background: #10aaa8;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    border: 1px solid #9bfffe;
+    font-size: 1rem;
+}
+
+.banner-topo-para .banner-topo-para-buttons a:first-child:hover {
+    background: #fff;
+    color: #10aaa8;
+}
+
+.banner-topo-para .banner-topo-para-buttons a:hover {
+    background: #036967;
+}
+
+@media (max-width: 768px) {
+    .banner-topo-para h1 {
+        font-size: 2rem;
+    }
+
+    .banner-topo-para .banner-topo-para-buttons a {
+        padding: 8px 16px;
+    }
+}
+
+
+/* fim banner topo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .area-clientes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+
+
+            margin: 0 auto;
+        }
+
+        .box-imagem {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            overflow: hidden;
+            background: #f5f5f5;
+            border-radius: 100px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-imagem img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 85%;
+            max-height: 85%;
+
+        }
+
+        .box-imagem:hover {
+            transform: scale(1.05);
+            border: 1px solid #9bfffe;
+
+        }
+
+        @media (max-width: 768px) {
+            .area-clientes {
+                gap: 12px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .box-imagem {
+                transition: none;
+                border: 1px solid #33333300;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 60px 0px 0px;
+}
+.social-espaco {
+    margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+      color: #10aaa8;
+}
+
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+      color: #fff;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+}
+
+.footer-section ul li a:hover {
+  color: #00adb5;
+}
+
+.contact .social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+.social-icons {
+    filter: invert(1);
+}
+
+.contact .social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.help {
+  background-color: #00adb5;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #111;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.certification a img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+
+
+  footer {
+
+    text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-section h3 {
+    font-size: 33px;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    font-size: 20px;
+  }
+}
+
+
+
+    </style>
+
+
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFQ2BBT5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFQ2BBT5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Cabeçalho -->
+    <header>
+    <div class="logo">
+    <a href="https://www.planet-topografia.com.br/">
+      <img  src="https://www.planet-topografia.com.br/img/logo-planet-topografia.png" alt="Planet Topografia Georeferenciamento" width="184" height="80" loading="lazy"></a>
+<button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+    </div>
+
+    <div class="info">
+      <div class="top">
+
+        <span> ✉ contato@planet-topografia.com.br</span>
+
+        <div class="social-icons">
+          <a class="bord-icons" href="https://www.instagram.com/planet_topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-instagram.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.facebook.com/Planettopograffia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-facebook.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.youtube.com/@planet-topografia/"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-youtube.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.linkedin.com/company/planet-topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-linkedin.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+
+        </div>
+      </div>
+      <div class="bottom">
+        <nav>
+          <ul>
+            <li><a href="https://www.planet-topografia.com.br/" class="nav-item nav-link ">INICIO</a></li>
+            <li><a href="https://www.planet-topografia.com.br/quem-somos" class="nav-item nav-link ">QUEM SOMOS</a></li>
+            <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos" class="nav-item nav-link ">SOLUÇÕES E SERVIÇOS</a></li>
+            <li><a href="https://www.planet-topografia.com.br/projetos-entregues" class="nav-item nav-link ">PROJETOS</a></li>
+            <li><a class="active-nav" href="https://www.planet-topografia.com.br/clientes" class="nav-item nav-link ">CLIENTES</a></li>
+
+<li>
+
+            <ul class="menu ">
+
+                  <li><a href="#">INFORMAÇÕES</a>
+                <ul>
+                    <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-drone-matrice-350-rtk-scanner-lidar-zenmuse-l2 " class="dropdown-item ">Mapeamento aéreo com Drone Matrice 350 RTK</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-3d" class="dropdown-item ">Mapeamento 3D</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-com-lidar" class="dropdown-item  ">Mapeamento Aéreo com LIDAR</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo" class="dropdown-item ">Levantamento Topográfico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/topografia-na-construcao-civil" class="dropdown-item ">Topografia na construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/Levantamento-planialtimetrico-cadastral" class="dropdown-item   ">Levantamento planialtimétrico cadastral</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/empresa-de-topografia-em-sao-paulo" class="dropdown-item   ">Empresa de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-planialtimetrico-sao-paulo" class="dropdown-item ">Levantamento Planialtimétrico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/servicos-de-topografia-em-sao-paulo" class="dropdown-item ">Serviços de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais" class="dropdown-item ">Georreferenciamento de Imóveis Rurais</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-em-projetos-de-construcao-civil" class="dropdown-item  ">A importância da topografia em projetos de construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-para-evitar-problemas-em-obras" class="dropdown-item ">A importância da topografia para evitar problemas em obras</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/os-principais-equipamentos-utilizados-em-levantamentos-topograficos" class="dropdown-item ">Equipamentos utilizados em levantamentos topográficos</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/beneficios-do-mapeamento-aéreo-na-topografia" class="dropdown-item ">Benefícios do mapeamento aéreo na topografia</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/nocoes-fundamentais-de-topografia" class="dropdown-item ">Noções Fundamentais de Topografia
+</a> </li>
+<li><a href="https://www.planet-topografia.com.br/escolha-a-empresa-de-topografia-certa" class="dropdown-item ">Empresa de Topografia certa</a> </li>
+<li><a href="https://www.planet-topografia.com.br/topografia-e-georeferenciamento" class="dropdown-item ">Topografia e georreferenciamento</a> </li>
+<li><a href="https://www.planet-topografia.com.br/o-futuro-da-topografia" class="dropdown-item ">O Futuro da Topografia</a> </li>
+
+                </ul>
+            </li>
+</ul>
+</li>
+            <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia" class="nav-item nav-link ">CONTATO</a></li>
+          </ul>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=5511943076945&text=Ol%C3%A1!%20Preciso%20de%20um%20OR%C3%87AMENTO%20para%20o%20seguinte%20servi%C3%A7o:%20" class="btn-orcamento">ORÇAMENTO</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay para escurecer o fundo -->
+  <div class="menu-overlay" role="presentation" aria-hidden="true"></div>
+
+  <!-- Menu lateral -->
+  <div class="navMenu" aria-hidden="true" role="menu">
+    <button class="close-menu" aria-label="Fechar Menu">✖</button>
+    <ul>
+      <li><a href="https://www.planet-topografia.com.br/">INICIO</a></li>
+      <li><a href="https://www.planet-topografia.com.br/quem-somos">QUEM SOMOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos">SOLUÇÕES E SERVIÇOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/projetos-entregues">PROJETOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/clientes">CLIENTES</a></li>
+<li>
+      <ul class="menu    ">
+
+                  <li><a href="#">INFORMAÇÕES</a>
+                <ul>
+                    <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-drone-matrice-350-rtk-scanner-lidar-zenmuse-l2 " class="dropdown-item ">Mapeamento aéreo com Drone Matrice 350 RTK</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-3d" class="dropdown-item ">Mapeamento 3D</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-com-lidar" class="dropdown-item  ">Mapeamento Aéreo com LIDAR</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo" class="dropdown-item ">Levantamento Topográfico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/topografia-na-construcao-civil" class="dropdown-item ">Topografia na construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/Levantamento-planialtimetrico-cadastral" class="dropdown-item   active">Levantamento planialtimétrico cadastral</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/empresa-de-topografia-em-sao-paulo" class="dropdown-item   ">Empresa de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-planialtimetrico-sao-paulo" class="dropdown-item ">Levantamento Planialtimétrico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/servicos-de-topografia-em-sao-paulo" class="dropdown-item ">Serviços de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais" class="dropdown-item ">Georreferenciamento de Imóveis Rurais</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-em-projetos-de-construcao-civil" class="dropdown-item  ">A importância da topografia em projetos de construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-para-evitar-problemas-em-obras" class="dropdown-item ">A importância da topografia para evitar problemas em obras</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/os-principais-equipamentos-utilizados-em-levantamentos-topograficos" class="dropdown-item ">Equipamentos utilizados em levantamentos topográficos</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/beneficios-do-mapeamento-aéreo-na-topografia" class="dropdown-item ">Benefícios do mapeamento aéreo na topografia</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/nocoes-fundamentais-de-topografia" class="dropdown-item ">Noções Fundamentais de Topografia
+</a> </li>
+<li><a href="https://www.planet-topografia.com.br/escolha-a-empresa-de-topografia-certa" class="dropdown-item ">Empresa de Topografia certa</a> </li>
+<li><a href="https://www.planet-topografia.com.br/topografia-e-georeferenciamento" class="dropdown-item ">Topografia e georreferenciamento</a> </li>
+<li><a href="https://www.planet-topografia.com.br/o-futuro-da-topografia" class="dropdown-item ">O Futuro da Topografia</a> </li>
+
+                </ul>
+            </li>
+</ul>
+</li>
+      <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia">CONTATO</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+<section class="banner-topo-para">
+    <div class="banner-topo-para-wrapper">
+        <div class="banner-topo-para-content">
+            <h1>Nossos Clientes</h1>
+
+        </div>
+    </div>
+</section>
+
+<div class="text-center">
+    <h2 class="display-3 ">Clientes e Parceiros </h2 >
+            <span class="text-primary text-nov">Conheça alguns dos parceiros que confiam na Planet Topografia para projetos de precisão.
+
+Temos orgulho de colaborar com empresas que <p>compartilham nosso compromisso com a excelência e a inovação</span>
+
+        </div>
+
+
+
+ <div class="area-clientes" aria-label="Grade de imagens">
+        <!-- Exemplos de imagens -->
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/acciona-business-as-unusual.webp" alt="Acciona Business as unusual">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Aragon-perfuracoes-e-sondagens.webp" alt="Aragon Perfurações e Sondagens">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/bht-engenharia.webp" alt="BHT Engenharia e Montagens">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/bosch.webp" alt="Boch">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/brechtson-engenharia.webp" alt="Brechtson">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/cbi-companhia-brasileira-de-infraestrutura.webp" alt="CBI Companhia Brasileira de Infraestrutura">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/CDG-contrutura-planet-topografia.webp" alt="CDG Construtura Planet Topografia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/cdhu-planet-topografia.webp" alt="CDHU">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Cerqueira-torres-planet-topografia.webp" alt="Cerqueira-Torres">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Dubai-incorpracao-e-construcao-planet-topograia.webp" alt="Dubai Incorporação e Construção">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/durazzo-medeiros-advogados-planet-topografia.webp" alt="Durazzo Medeiros & Advogados">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Elefe-engenharia-planet-topografia.webp" alt="Elefe Engenharia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/essenza-conceito-taboao.webp" alt="Essenza Conceito Taboão">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/FBS-Planet-Topografia.webp" alt="FBS">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Geovector-engenharia-geomatica-planet-topografia.webp" alt="Geovector Engenharia Geometrica">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/habcasa-incorporadora-e-contrutora.webp" alt="Habcasa Incorporadora e Contrutora">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/htf-planet-topografia.webp" alt="HTF">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/LSE-LABORATORIO-DE-SISTEMAS-ESTRUTURAIS.webp" alt="LSE Laboratorio de Sistemas Estruturais">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/mrv.webp" alt="MRV">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/or.webp" alt="Or">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/ozaki-engenharia.webp" alt="Ozaki Engenharia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/porto-seguro-planet topografia.webp" alt="Porto Seguro ">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/prefeitura-rio-grande-da-serra.webp" alt="Prefeitura Rio Grande da Serra">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Procert-engenharia-planet-topografia.webp" alt="Procert Engenharia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/rmr-engenharia-planet-topografia.webp" alt="RMR Engenharia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Roy-engenharia.webp" alt="Roy Engenharia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/Sao-paulo-governo-do-estado-planet-topografia.webp" alt="São Paulo - Governo do Estado">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/soebe.webp" alt="Soebe">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/sst-engenharia.webp" alt="SST Engenharia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/tliq-planet-topografia.webp" alt="Tliq ">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/transmac.webp" alt="Transmac">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/vercelli-Engenharia-planet-topografia.webp" alt="Vercelli Engenharia">
+        </div>
+        <div class="box-imagem" tabindex="0">
+            <img src="https://www.planet-topografia.com.br/clientes/eco-rodovias-planet-topografia.webp" alt="EcoRodovias">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section contact">
+      <h3>Contato</h3>
+      <p>📍 Rua Monte Alegre do Sul, 1220<br>Jardim Brasília - São Paulo<br>CEP 02.859-080</p>
+      <p>📧  contato@planet-topografia.com.br </p>
+      <p>📱 <a href="tel:+5511943076945">(11) 94307-6945</a></p>
+      <div class="social-icons social-espaco">
+      <a href="https://www.instagram.com/planet_topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-instagram.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.facebook.com/Planettopograffia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-facebook.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.youtube.com/@planet-topografia/"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-youtube.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.linkedin.com/company/planet-topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-linkedin.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+
+      </div>
+    </div>
+    <div class="footer-section links">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="https://www.planet-topografia.com.br/quem-somos">Quem Somos</a></li>
+        <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos">Soluções e Serviços</a></li>
+        <li><a href="https://www.planet-topografia.com.br/mapeamento-3d">Mapeamento 3D</a></li>
+        <li><a href="https://www.planet-topografia.com.br/projetos-entregues">Projetos Entregues</a></li>
+        <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia">Fale Conosco</a></li>
+      </ul>
+    </div>
+    <div class="footer-section services">
+      <h3>Serviços</h3>
+      <ul>
+        <li><a href="https://www.planet-topografia.com.br/mapeamento-3d">Mapeamento 3D</a></li>
+        <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais">Georreferenciamento de Imóveis</a></li>
+        <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo">Levantamento Topográfico</a></li>
+        <li><a href="">Soluções em Batimetria</a></li>
+        <li><a href="https://www.planet-topografia.com.br/acompanhamento-de-obras-em-sao-paulo-planet-topografia">Acompanhamento de Obras</a></li>
+      </ul>
+    </div>
+    <div class="footer-section help">
+      <h4>Precisa de Ajuda?</h4>
+      <p>Somos especializados em Mapeamento 3D, Georreferenciamento e Acompanhamento de Obras.</p>
+      <p><strong>Entre em contato agora para solicitar um orçamento ou esclarecer dúvidas.</strong></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+
+    <div class="certification">
+      <a class="text-light fw-bold" href="https://planet-topografia.com.br/">Copyright © 2024 Planet Topografia. </a>Todos os direitos reservados. <a rel="nofollow" href="https://validator.w3.org/check?uri=https://www.planet-topografia.com.br/" target="_blank" title="HTML5 W3C"><i class="fab fa-html5 "></i> <strong>W3C</strong></a>
+      <a rel="nofollow" href="http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri=https%3A%2F%2Fplanet-topografia.com.br%2F&usermedium=all&vextwarning=&warning=1
+" target="_blank" title="CSS W3C"><i class="fab fa-css3"></i> <strong>W3C</strong></a>
+    </div>
+  </div>
+
+
+
+
+  <a href="https://api.whatsapp.com/send?phone=5511943076945&text=Ol%C3%A1!%20Estou%20vindo%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida!" class="whatsapp-button" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+        <span class="icon"></span>
+    </a>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const navMenu = document.querySelector('.navMenu');
+    const closeMenuButton = document.querySelector('.close-menu');
+
+    // Função para abrir o menu
+    const openMenu = () => {
+      navMenu.style.display = 'block';
+      menuOverlay.style.display = 'block';
+    };
+
+    // Função para fechar o menu
+    const closeMenu = () => {
+      navMenu.style.display = 'none';
+      menuOverlay.style.display = 'none';
+    };
+
+    menuToggle.addEventListener('click', openMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    closeMenuButton.addEventListener('click', closeMenu);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

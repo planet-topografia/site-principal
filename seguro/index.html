@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Topografia em São Paulo - Planet Topografia</title>
+    <meta name="description" content="Serviços de topografia em São Paulo: Georreferenciamento, Levantamento Planialtimétrico, Demarcação de Obras e mais. Confira!">
+        <!-- Favicon -->
+    <link rel="icon" href="https://www.planet-topografia.com.br/img/favicon.png" />
+    <link rel="stylesheet" href="https://www.planet-topografia.com.br/css/slick.min.css">
+
+
+    <style>
+
+
+
+
+
+
+
+
+         .video-wrapper {
+
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+        /* INICIO GERAL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+ ul {
+            list-style: none;
+            padding: 0;
+        }
+
+    .text-center {
+        text-align: center !important;
+        margin-bottom: 3rem !important;
+        margin-top: 6rem !important;
+        color: #10aaa8 !important;
+    }
+    a {
+        text-decoration: none;
+        color: #10aaa8
+    }
+
+    .mb-4{margin-bottom:1.5rem !important}
+
+        span.sub-titulo-dif {
+        font-weight: 100;
+        font-size: 1.85rem;
+    }
+
+    .text-primary.text-uppercase {
+        color: #10aaa8 !important;
+        font-size: 1.25rem;
+
+    }
+    .display-3 {
+        color: #050a0e;
+        font-size: 2em!important;
+    }
+
+
+    /* Container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* Cabeçalho */
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        background-image: linear-gradient(310deg, #12A99F 0%, #FFFFFF 96%);
+    }
+
+    .logo {
+        text-align: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info {
+        display: grid;
+        grid-template-rows: auto auto;
+
+    }
+
+    .info .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #10aaa8;
+        padding: 14px 26px;
+        color: #f9f9f9;
+        padding-right: 6rem !important;
+    }
+
+    .info .top .social-icons {
+        display: flex;
+        gap: 4px;
+    }
+
+    a.bord-icons {
+        border: 1px solid #3b0000;
+        border-radius: 50% !important;
+        padding: 7px 0px;
+        display: flex;
+    }
+    img.icon-top-principal {
+        width: 29px;
+        height: 16px;
+    }
+    .info .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 0px;
+        padding-right: 6rem !important;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-size: 0.775rem;
+    padding: 4px 10px;
+    display: flex
+;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    nav ul li a:hover {
+        color: #005453;
+    }
+
+
+    nav ul li a.active {
+        color: #fff;
+    }
+
+    nav ul  li > a::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 0;
+        top: 5px;
+        background: transparent;
+        transition: all 0.3s;
+    }
+
+    nav ul  li  > a:hover::after, li > a.active-nav::after {
+        width: 100%;
+        background: #9bfffe;
+    }
+
+
+    .btn-orcamento {
+        padding: 6px 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 100;
+        transition: background-color 0.3s;
+        background-color: #14262a;
+    border: 1px solid #47bcb4;
+    }
+
+    .btn-orcamento:hover {
+        background-color: #00a09e;
+    }
+
+    /* Estilos do menu responsivo */
+    .menu-toggle {
+      display: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 37px;
+    background-color: #5ec5be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    }
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+    nav {
+      position: relative;
+    }
+
+    nav ul {
+      flex-direction: row;
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr;
+        text-align: center;
+               padding: 27px;
+      }
+.info   {
+
+    display: none;
+}
+
+      .menu-toggle {
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        /* float: right !important;*/
+      }
+
+
+
+
+
+
+
+      nav ul {
+display: none;
+        flex-direction: column;
+        /* background-color: #fff; */
+        /* border: 1px solid #ddd; */
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+
+        position: relative;
+
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      nav ul li:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+
+.menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+.navMenu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .navMenu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .navMenu ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navMenu ul li a:hover {
+      color: #007BFF;
+    }
+
+    .navMenu .close-menu {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #333;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+
+
+
+        @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navMenu {
+        width: 75%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* inicio drone voando*/
+
+
+.product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 10rem;
+    transform: translate(-50%, -50%);
+    animation: fly 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+
+
+
+.product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 10rem;
+    transform: translate(-50%, -50%);
+    animation: fly 4s ease-in-out infinite;
+        z-index: 1;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-50%, -46%);
+    }
+
+    50% {
+        transform: translate(-50%, -54%);
+    }
+
+    100% {
+        transform: translate(-50%, -46%);
+    }
+}
+
+.product img {
+  display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 547px;
+    margin-top: -5px;
+
+}
+
+
+
+
+
+
+/* INICIO BANNER PRINCIPAL */
+
+
+    .banner {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1920 / 446;
+      background-image: url('http://www.planet-topografia.com.br/img/bg-mapeamento-aereo-com-drone.jpg'); /* Substitua aqui */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .banner-text {
+      max-width: 90%;
+    }
+
+    .banner-text h1 {
+         font-size: 3em;
+    font-weight: bold;
+    color: #00d1d1;
+    line-height: normal;
+    margin-top: -68px;
+    }
+
+    .banner-text span {
+      font-weight: normal;
+      color: white;
+    }
+
+    .highlight-box {
+         background-color: rgba(0, 128, 145, 0.9);
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+
+    font-size: 1.2em;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    }
+
+    /* Responsivo para mobile */
+    @media (max-width: 768px) {
+      .banner {
+        aspect-ratio: 768 / 600;
+        background-image: url('http://www.planet-topografia.com.br/img/bg-mapeamento-aereo-com-drone.jpg'); /* Substitua aqui */
+padding: 20px;
+align-items: normal;
+
+
+      }
+
+      .banner-text h1 {
+        font-size: 2em;
+        margin-top: 0px;
+      }
+
+      .highlight-box {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+    }
+
+/* FIM BANNER PRINCIPAL */
+
+
+
+
+
+
+
+
+
+
+.menu li{
+position:relative;
+/*float:left; */
+z-index: 9999!important;
+}
+
+
+.menu li a{height: 24px;color:#333; text-decoration:none;   display:block;}
+
+.menu li a:hover{
+background: #10aaa8;
+    color: #fff;
+}
+
+.menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+width: max-content;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border: 0.1px solid #f9f9f9;
+    display: block;
+    width: 100%;
+}
+
+p.sub-principal {
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos principais do banner */
+.banner-slide .banner-slide-mobile {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; /* Centraliza o conteúdo */
+overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+.slide {
+background-repeat: no-repeat !important;
+background-size: cover !important;
+background-attachment: fixed !important;
+height: 40vh !important;
+
+}
+
+.banner-slide  .banner-slide-mobile{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.banner-slide-mobile{
+background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+.banner-slide {
+
+    display: none;
+}
+
+
+.product
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 10rem;
+    transform: translate(-50%, -50%);
+    animation: fly 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+.product img {
+ background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    width: 368px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+.banner-slide-mobile {
+
+    display: none;
+}
+
+
+.product
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 10rem;
+    transform: translate(-50%, -50%);
+    animation: fly 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* INÍCIO CATEGORIA SERVIÇOS Principal */
+.cat-servicos-principal {
+  text-align: center;
+      padding: 189px 0px 0px;
+  margin-bottom: 4rem; /* Removido !important para evitar problemas de sobreposição */
+}
+
+.cat-servicos-principal-title {
+  font-size: 1rem; /* Uso de unidade padrão para texto */
+  color: #333; /* Cor aplicada de forma consistente */
+}
+
+.cat-servicos-principal-subtitle {
+  font-size: 2rem; /* Mantido tamanho atualizado */
+  margin-bottom: 20px;
+  color: #050a0e; /* Cor final aplicada */
+}
+
+.slick-slide {
+  display: flex; /* Garantindo flex container */
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-servicos-principal-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.cat-servicos-principal-item {
+  background-color: #f9f9f9; /* Uso de `background-color` ao invés de `background` para maior clareza */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.cat-servicos-principal-item:hover {
+ transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #9bfffe;
+}
+
+.cat-servicos-principal-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.cat-servicos-principal-item h3 {
+font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    padding: 21px 0px;
+}
+
+.cat-servicos-principal-item p {
+  font-size: 1rem; /* Unidade padrão */
+  color: #666;
+}
+
+@media (max-width: 768px) {
+.slick-initialized .slick-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* FIM CATEGORIA SERVIÇOS Principal */
+
+
+
+
+
+
+
+
+
+
+/* INICIO TEXTO ESPECIALIDADE Principal */
+
+
+
+.two-grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  background: #fff;
+
+  border-radius: 8px;
+
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.text-grid {
+  text-align: left;
+}
+
+.text-grid h3 {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.text-grid h2 {
+color: #222;
+    font-size: 1.8rem;
+    margin-bottom: 2.75rem;
+    margin-top: 0.75rem;
+    font-size: 4rem;
+    line-height: 59px;
+}
+
+.text-grid p {
+  color: #666;
+  font-size: 1rem;
+}
+
+
+ /* Animações */ 
+.pulse{ animation: pulse 2s infinite;}
+@keyframes pulse { 50%{ transform: scale(1.1);}}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .two-grid-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .text-grid {
+    text-align: center;
+  }
+
+
+
+.flexx {
+    display: flex
+;
+    align-items: center;
+    gap: 20px;
+    padding: 31px;
+    background: #10aaa8;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.flexx strong {
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+
+;
+}
+.flexx p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center!important;
+}
+
+
+}
+/* FIM TEXTO ESPECIALIDADE Principal */
+
+
+
+
+
+
+
+/* INICIO CTA Principal */
+
+    .flexx {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+    background: #10aaa8;
+        }
+
+        .flexx p {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            text-align: right;
+        }
+
+        .flexx p strong {
+            font-size: 35px;
+            color: #ffffff;
+        }
+
+        .flexx p {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .btt a {
+            display: inline-flex;
+    align-items: center;
+    padding: 19px 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+        }
+
+        .btt a i {
+            margin-right: 8px;
+        }
+
+
+/* FIM CTA Principal */
+
+
+
+
+
+
+
+/* INICIO DIFERENCIAL Principal */
+
+
+.img-icon {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+
+.titulo-diferenciais{
+
+        margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #10aaa8;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+
+
+section.grad-diferencial-fundo {
+  
+    background-image: linear-gradient(107deg, #b5f1ed 0%, #FFFFFF 96%);
+}
+  
+    .grad-diferencial {
+      display: grid;
+      grid-template-columns: 1fr; /* Colunas únicas por padrão */
+      gap: 20px;
+      padding: 20px;
+          max-width: 1460px;
+    margin: 0 auto;
+    }
+
+    /* Primeira grade: título centralizado */
+    .grad-diferencial .grad-titulo {
+      text-align: right;
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: #333;
+      padding: 0 20px;
+      margin: 0 auto;
+          align-items: center;
+    display: flex;
+}
+
+
+
+
+    /* Segunda grade: imagem centralizada */
+    .grad-diferencial .grad-imagem-centralizada {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Terceira e quarta grades: itens com imagem e descrição */
+    .grad-diferencial .grad-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    .grad-diferencial .grad-item .grad-imagem {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .grad-diferencial .grad-item .grad-descricao {
+      flex-grow: 1;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Estilos responsivos */
+    @media (min-width: 768px) {
+      .grad-diferencial {
+        grid-template-columns: 0.5fr 0.5fr 1fr 1fr; /* 4 colunas em telas maiores */
+      }
+
+      .grad-diferencial .grad-titulo {
+/* text-align: center;*/
+      }
+
+      .grad-diferencial .grad-item {
+        flex-direction: row;
+      }
+    }
+
+
+
+
+/* FIM DIFERENCIAL Principal */
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO BANNER PROJETOS Principal */
+
+
+  .cat-projetos-principal-container {
+            max-width: 1260px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .slick-slide {
+            outline: none;
+        }
+
+        .cat-projetos-principal-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 15px;
+        }
+
+        .cat-projetos-principal-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cat-projetos-principal-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .cat-projetos-principal-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .cat-projetos-principal-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .cat-projetos-principal-card button {
+            background-color: #10aaa8;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cat-projetos-principal-card button:hover {
+            background-color: #147372;
+        }
+
+
+/* FIM BANNER PROJETOS Principal */
+
+
+
+
+
+
+
+
+/* INICIO BANNER MARCAS principal */
+
+    .cat-marcas-principal-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 2rem;
+    margin-bottom: 8rem;
+        }
+        .cat-marcas-principal-item {
+            outline: none; /* Remove borda ao focar */
+            transition: transform 0.3s ease;
+        }
+        .cat-marcas-principal-item:hover {
+            transform: scale(1.05);
+        }
+        .cat-marcas-principal-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .cat-marcas-principal-container {
+                padding: 10px;
+            }
+        }
+
+/* FIM BANNER MARCAS principal */
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 60px 0px 0px;
+}
+.social-espaco {
+    margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+      color: #10aaa8;
+}
+
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+      color: #fff;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+}
+
+.footer-section ul li a:hover {
+  color: #00adb5;
+}
+
+.contact .social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+.social-icons {
+    filter: invert(1);
+}
+
+.contact .social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.help {
+  background-color: #00adb5;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #111;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.certification a img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+
+
+  footer {
+
+    text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-section h3 {
+    font-size: 33px;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    font-size: 20px;
+  }
+}
+
+button.slick-next.slick-arrow {
+    display: none !important;
+}
+
+
+
+
+
+.tabcontent h3 {
+    color: #555555;
+    font-size: 19px;
+}
+
+ .tabcontent {
+
+    font-size: 12px;
+    margin: 0 auto;
+
+}
+
+
+.tabs {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 9px;
+    transition: 0.3s;
+    width: 20%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tablink.active {
+    background-color: #10aaa8;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .tablink {
+        width: 50%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tablink {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+  .norte-estilo {
+
+            padding: 15px;
+
+        }
+
+
+
+
+
+ .norte-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+            gap: 20px; /* Espaço entre as colunas */
+        }
+
+
+      @media (max-width: 768px) {
+            .norte-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .norte-container {
+                grid-template-columns: 1fr; /* 1 coluna no celular */
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* inicio botao whatsapp flutuante principal */
+            .whatsapp-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                background-color: #10aaa8;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                animation: pulse 1.5s infinite;
+                transition: transform 0.3s ease;
+            }
+
+            .whatsapp-button:hover {
+                transform: scale(1.1);
+            }
+
+       .whatsapp-button .icon {
+    width: 30px;
+    height: 30px;
+    color: #333;
+    fill: #fff !important;
+    background-image: url(https://www.planet-topografia.com.br/img/botao-whatsapp-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+            /* Animação da Borda Pulsante */
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgb(16 170 168);
+                }
+
+                70% {
+                    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+                }
+
+                100% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                }
+            }
+
+            /* fim botao whatsapp flutuante principal */
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFQ2BBT5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFQ2BBT5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Cabeçalho -->
+    <header>
+
+    <div class="logo">
+    <a href="https://www.planet-topografia.com.br/">
+      <img  src="https://www.planet-topografia.com.br/img/logo-planet-topografia.png" alt="Planet Topografia Georeferenciamento" width="184" height="80" loading="lazy"></a>
+<button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+    </div>
+
+    <div class="info">
+      <div class="top">
+        
+        <span> ✉ contato@planet-topografia.com.br</span>
+      
+        <div class="social-icons">
+          <a class="bord-icons" href="https://www.instagram.com/planet_topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-instagram.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.facebook.com/Planettopograffia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-facebook.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.youtube.com/@planet-topografia/"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-youtube.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.linkedin.com/company/planet-topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-linkedin.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+
+        </div>
+      </div>
+      <div class="bottom">        
+        <nav>
+          <ul>
+            <li><a href="https://www.planet-topografia.com.br/" class="nav-item nav-link ">INICIO</a></li>
+            <li><a href="https://www.planet-topografia.com.br/quem-somos" class="nav-item nav-link ">QUEM SOMOS</a></li>
+            <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos" class="nav-item nav-link ">SOLUÇÕES E SERVIÇOS</a></li>
+            <li><a href="https://www.planet-topografia.com.br/projetos-entregues" class="nav-item nav-link ">PROJETOS</a></li>
+            <li><a href="https://www.planet-topografia.com.br/clientes" class="nav-item nav-link ">CLIENTES</a></li>
+
+<li>
+
+            <ul class="menu ">
+
+                  <li><a href="#">INFORMAÇÕES</a>
+                <ul>
+                    <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-drone-matrice-350-rtk-scanner-lidar-zenmuse-l2 " class="dropdown-item ">Mapeamento aéreo com Drone Matrice 350 RTK</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-3d" class="dropdown-item ">Mapeamento 3D</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-com-lidar" class="dropdown-item  ">Mapeamento Aéreo com LIDAR</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo" class="dropdown-item ">Levantamento Topográfico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/topografia-na-construcao-civil" class="dropdown-item ">Topografia na construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/Levantamento-planialtimetrico-cadastral" class="dropdown-item   ">Levantamento planialtimétrico cadastral</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/empresa-de-topografia-em-sao-paulo" class="dropdown-item   ">Empresa de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-planialtimetrico-sao-paulo" class="dropdown-item ">Levantamento Planialtimétrico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/servicos-de-topografia-em-sao-paulo" class="dropdown-item ">Serviços de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais" class="dropdown-item ">Georreferenciamento de Imóveis Rurais</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-em-projetos-de-construcao-civil" class="dropdown-item  ">A importância da topografia em projetos de construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-para-evitar-problemas-em-obras" class="dropdown-item ">A importância da topografia para evitar problemas em obras</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/os-principais-equipamentos-utilizados-em-levantamentos-topograficos" class="dropdown-item ">Equipamentos utilizados em levantamentos topográficos</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/beneficios-do-mapeamento-aéreo-na-topografia" class="dropdown-item ">Benefícios do mapeamento aéreo na topografia</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/nocoes-fundamentais-de-topografia" class="dropdown-item ">Noções Fundamentais de Topografia
+</a> </li>
+<li><a href="https://www.planet-topografia.com.br/escolha-a-empresa-de-topografia-certa" class="dropdown-item ">Empresa de Topografia certa</a> </li>
+<li><a href="https://www.planet-topografia.com.br/topografia-e-georeferenciamento" class="dropdown-item ">Topografia e georreferenciamento</a> </li>
+<li><a href="https://www.planet-topografia.com.br/o-futuro-da-topografia" class="dropdown-item ">O Futuro da Topografia</a> </li>
+
+                </ul>
+            </li>
+</ul>
+</li>
+            <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia" class="nav-item nav-link ">CONTATO</a></li>
+          </ul>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=5511943076945&text=Ol%C3%A1!%20Preciso%20de%20um%20OR%C3%87AMENTO%20para%20o%20seguinte%20servi%C3%A7o:%20" class="btn-orcamento">ORÇAMENTO</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay para escurecer o fundo -->
+  <div class="menu-overlay" role="presentation" aria-hidden="true"></div>
+
+  <!-- Menu lateral -->
+  <div class="navMenu" aria-hidden="true" role="menu">
+    <button class="close-menu" aria-label="Fechar Menu">✖</button>
+    <ul>
+      <li><a href="https://www.planet-topografia.com.br/">INICIO</a></li>
+      <li><a href="https://www.planet-topografia.com.br/quem-somos">QUEM SOMOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos">SOLUÇÕES E SERVIÇOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/projetos-entregues">PROJETOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/clientes">CLIENTES</a></li>
+<li>
+      <ul class="menu    ">
+
+                  <li><a href="#">INFORMAÇÕES</a>
+                <ul>
+                    <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-drone-matrice-350-rtk-scanner-lidar-zenmuse-l2 " class="dropdown-item ">Mapeamento aéreo com Drone Matrice 350 RTK</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-3d" class="dropdown-item ">Mapeamento 3D</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-com-lidar" class="dropdown-item  ">Mapeamento Aéreo com LIDAR</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo" class="dropdown-item ">Levantamento Topográfico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/topografia-na-construcao-civil" class="dropdown-item ">Topografia na construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/Levantamento-planialtimetrico-cadastral" class="dropdown-item   active">Levantamento planialtimétrico cadastral</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/empresa-de-topografia-em-sao-paulo" class="dropdown-item   ">Empresa de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-planialtimetrico-sao-paulo" class="dropdown-item ">Levantamento Planialtimétrico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/servicos-de-topografia-em-sao-paulo" class="dropdown-item ">Serviços de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais" class="dropdown-item ">Georreferenciamento de Imóveis Rurais</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-em-projetos-de-construcao-civil" class="dropdown-item  ">A importância da topografia em projetos de construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-para-evitar-problemas-em-obras" class="dropdown-item ">A importância da topografia para evitar problemas em obras</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/os-principais-equipamentos-utilizados-em-levantamentos-topograficos" class="dropdown-item ">Equipamentos utilizados em levantamentos topográficos</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/beneficios-do-mapeamento-aéreo-na-topografia" class="dropdown-item ">Benefícios do mapeamento aéreo na topografia</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/nocoes-fundamentais-de-topografia" class="dropdown-item ">Noções Fundamentais de Topografia
+</a> </li>
+<li><a href="https://www.planet-topografia.com.br/escolha-a-empresa-de-topografia-certa" class="dropdown-item ">Empresa de Topografia certa</a> </li>
+<li><a href="https://www.planet-topografia.com.br/topografia-e-georeferenciamento" class="dropdown-item ">Topografia e georreferenciamento</a> </li>
+<li><a href="https://www.planet-topografia.com.br/o-futuro-da-topografia" class="dropdown-item ">O Futuro da Topografia</a> </li>
+
+                </ul>
+            </li>          
+</ul>
+</li>
+      <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia">CONTATO</a></li>
+    </ul>
+  </div>
+
+    <!-- Corpo -->
+
+
+
+<!-- inicio banner principal-->
+ <div class="banner">
+    <div class="banner-text">
+      <h1>Levantamento Topografico <br> com drone </h1>
+      <div class="highlight-box">
+        A agilidade do Drone com a precisão <br>milimétrica do Sensor <span><strong>LiDAR</strong></span>
+        .
+      </div>
+    </div>
+  </div>
+
+
+
+
+                 <div class="product" id="product">
+    <img src="img/DRONE2.png" alt="drone">
+      </div>
+
+
+
+
+<div class="cat-servicos-principal">
+    <h1 class="cat-servicos-principal-title">Equipes disponíveis para atender ao seu projeto.</h1>
+    <h2 class="cat-servicos-principal-subtitle">Em todo o Brasil</h2>
+
+
+
+
+    <div class="cat-servicos-principal-container">
+
+         <div class="cat-servicos-principal-item">
+        <img width="248" height="308" src="https://www.planet-topografia.com.br/img/mapeamento-aereo-com-drone-jackson-planet.webp" alt="GEORREFERENCIAMENTO" loading="eager">
+        <h3>REDUÇÃO DE CUSTOS COM MAPEAMENTO AÉREO</h3>
+        <p>Dados precisos em minutos, sem riscos para a equipe, com modelos 3D prontos para usar e mais agilidade no trabalho.</p>
+      </div>
+
+       <div class="cat-servicos-principal-item">
+        <img width="248" height="308" src="https://www.planet-topografia.com.br/img/INSPEÇÕES-AMBIENTAIS-COM-dRONE.webp" alt="INSCRIÇÃO DE IMÓVEIS RURAIS" loading="eager">
+        <h3>INSPEÇÕES AMBIENTAIS COM DRONE</h3>
+        <p>Detecte impactos e colete dados sobre vegetação, fauna e solo com precisão e rapidez.</p>
+      </div>
+
+      <div class="cat-servicos-principal-item">
+        <img width="248" height="308" src="https://www.planet-topografia.com.br/img/Redução-de-custos-com-mapeamento-aéreo.webp" alt="MAPEAMENTO COM DRONES" loading="eager">
+        <h3>MAPEAMENTO AÉREO COM DRONES</h3>
+        <p>Os Drones geram mapas detalhados com precisão e baixo custo, ideais para grandes áreas.</p>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+<section class="two-grid-section">
+    <div class="image-grid">
+      <img width="517" height="518" src="https://www.planet-topografia.com.br/img/topografia-com-drone.webp" alt="Topografia com Drone" >
+    </div>
+    <div class="text-grid">
+      <span>NOSSA ESPECIALIDADE</span>
+      <h2>Topografia com Drones</h2>
+
+      <p class="mb-4">
+        Nossa solução de mapeamento aéreo proporciona aos clientes alta tecnologia, com informações precisas e altíssima definição. Dentre suas aplicações destacamos: topografia, cadastro urbano, controle de obras, controle ambiental e mineração. É a solução ideal para automatização de resultados, permitindo um melhor detalhamento das imagens do local desejado e versatilidade nas aplicações.
+      </p>
+<p class="mb-4">
+        Trabalhamos com um time completo de profissionais de diversas áreas, procuramos atender todas as necessidades dos clientes no que diz respeito à construção civil, com aprovação de crédito habitacional, engenharia, arquitetura e assessoria jurídica, marketing e corretores devidamente credenciados.
+      </p>
+    </div>
+</section>
+
+
+
+<div class="flexx">
+    <p><strong>Solução completa em</strong><br>Topografia com MAPEAMENTO AÉREO</p>
+    <div class="btt pulse">
+        <a href="https://api.whatsapp.com/send?phone=5511943076945&text=Ol%C3%A1!%20Estou%20vindo%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida!" target="_blank">
+            <i class="fab fa-whatsapp"></i> FALE PELO WHATSAPP
+        </a>
+    </div>
+</div>
+
+
+
+
+
+<!-- corrigido-->
+<section class="grad-diferencial-fundo">
+  <div class="grad-diferencial">
+    <div class="grad-titulo">
+      <h2 class="titulo-diferenciais">
+        NOSSO<br>DIFERENCIAL<br>
+        <span class="sub-titulo-dif">NO MERCADO</span>
+      </h2>
+    </div>
+    <div class="img-icon">
+      <img
+        width="120"
+        height="120"
+        src="https://www.planet-topografia.com.br/img/seta-direita.svg"
+        alt="Imagem Centralizada"
+        class="grad-imagem-centralizada"
+        loading="lazy"
+      >
+    </div>
+    <div class="grad-itens">
+      <div class="grad-item">
+        <img src="img/tecnologia-avancada.svg" alt="Imagem 1" class="grad-imagem" loading="lazy">
+        <p class="grad-descricao">
+          <strong>Tecnologia Avançada e Equipamentos de Última Geração:</strong>
+          Drones e RTK para mapeamento aéreo e georreferenciamento.
+        </p>
+      </div>
+      <div class="grad-item">
+        <img src="img/atendimento-personalizado.svg" alt="Imagem 2" class="grad-imagem" loading="lazy">
+        <p class="grad-descricao">
+          <strong>Atendimento Personalizado:</strong>
+          Soluções adaptadas para cada tipo de imóvel e projeto.
+        </p>
+      </div>
+      <div class="grad-item">
+        <img src="img/integracao-de-servicos.svg" alt="Imagem 3" class="grad-imagem" loading="lazy">
+        <p class="grad-descricao">
+          <strong>Integração de Serviços:</strong>
+          Realização de georreferenciamento, usucapião e mais.
+        </p>
+      </div>
+    </div>
+    <div class="grad-itens">
+      <div class="grad-item">
+        <img src="img/entrega-de-resultados.svg" alt="Imagem 4" class="grad-imagem" loading="lazy">
+        <p class="grad-descricao">
+          <strong>Entrega de Resultados Rápidos e Precisos:</strong>
+          Dados exatos para lotes, divisões e áreas retificadas.
+        </p>
+      </div>
+      <div class="grad-item">
+        <img src="img/sustentabilidade-e-responsabilidade.svg" alt="Imagem 5" class="grad-imagem" loading="lazy">
+        <p class="grad-descricao">
+          <strong>Sustentabilidade e Responsabilidade Ambiental:</strong>
+          Soluções para CAR, reserva legal e licenciamento ambiental.
+        </p>
+      </div>
+      <div class="grad-item">
+        <img src="img/consultoria-e-acompanhamento.svg" alt="Imagem 6" class="grad-imagem" loading="lazy">
+        <p class="grad-descricao">
+          <strong>Consultoria e Acompanhamento Técnico:</strong>
+          Suporte completo para registros, projetos e licenciamento.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="text-center">
+            <span class="text-primary">Planet Topografia</span>
+            <h2 class="display-3">PROJETOS REALIZADOS </h2 >
+        </div>
+
+<div class="cat-projetos-principal-container">
+        <div class="cat-projetos-principal">
+            <div class="cat-projetos-principal-card">
+                <img src="https://www.planet-topografia.com.br/img/Mapeamento-com-LiDAR-em-Apiaí-SP-Precisão-no-Combate-à-Erosão.jpg" alt="Imagem 1" loading="lazy">
+                <h3>Mapeamento com LiDAR em Apiaí/SP: Precisão no Combate à Erosão</h3>
+                <p>Realizamos o mapeamento com tecnologia LiDAR para auxiliar no projeto de contenção de uma erosão em uma rodovia em Apiaí/SP. Através da nuvem de pontos, MDT, curvas de nível e ortofoto, fornecemos dados precisos para um planejamento eficiente e seguro. Tecnologia a serviço da engenharia</p>
+
+
+
+            </div>
+            <div class="cat-projetos-principal-card">
+                <img src="https://www.planet-topografia.com.br/img/Mapeamento-com-tecnologia-LiDAR-no-Autódromo-de-interlagos-Precisão-no-Planejamento-de-Eventos.jpg" alt="Imagem 2" loading="lazy">
+                <h3>Mapeamento com tecnologia LiDAR no Autódromo de Interlagos: Precisão no Planejamento de Eventos</h3>
+                <p>Realizamos o mapeamento do Autódromo de Interlagos/SP com drone e sensor LiDAR, gerando modelo 3D e planta baixa da área. Os dados fornecem base precisa para o planejamento de estruturas e logística de um festival. Tecnologia a serviço da engenharia.</p>
+
+            </div>
+            <div class="cat-projetos-principal-card">
+
+
+
+
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/i5GlqMUwcEk?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=i5GlqMUwcEk"
+      title="YouTube video"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+
+
+
+
+                <img src="https://www.planet-topografia.com.br/img/Mapeamento-LiDAR-em-Cabreúva-SP-para-Planejamento-de-Loteamento-Imobiliário.jpg" alt="Imagem 3" loading="lazy">
+                <h3>Mapeamento LiDAR em Cabreúva/SP para Planejamento de Loteamento Imobiliário</h3>
+                <p>Realizamos um mapeamento aéreo com tecnologia LiDAR no município de Cabreúva/SP para apoiar o inventário da área e o estudo de um futuro loteamento. A partir da nuvem de pontos e do MDT, obtivemos dados precisos da topografia, mesmo em áreas com vegetação densa, garantindo um planejamento urbanístico mais seguro e eficiente. Tecnologia a serviço da engenharia.</p>
+
+            </div>
+
+        </div>
+    </div>
+
+<div class="text-center">
+            <span class="text-primary">Planet Topografia</span>
+            <h2 class="display-3">CLIENTES E PARCEIROS</h2 >
+        </div>
+
+  <div class="cat-marcas-principal-container">
+        <div class="cat-marcas-principal">
+            <div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/acciona-business-as-unusual.webp" alt="Planet Topografia e ACCIONA Business as unusual" loading="lazy">
+            </div>
+            <div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Aragon-perfuracoes-e-sondagens.webp" alt="Planet Topografia e ARAGON Perfurações e Sondagens" loading="lazy">
+            </div>
+            <div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/bht-engenharia.webp" alt="Planet Topografia e BHT Engenharia" loading="lazy">
+            </div>
+            <div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/bosch.webp" alt="Planet Topografia e Bosch" loading="lazy">
+            </div>
+            <div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/brechtson-engenharia.webp" alt="Planet Topografia e Brechtson Engenharia" loading="lazy">
+            </div>
+            <div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/cbi-companhia-brasileira-de-infraestrutura.webp" alt="Planet Topografia e CBI Companhia Brasileira de Infraestrutura" loading="lazy">
+            </div>
+            <div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/CDG-contrutura-planet-topografia.webp" alt="Planet Topografia e CDG Construtora" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/cdhu-planet-topografia.webp" alt="Planet Topografia e CDHU" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Cerqueira-torres-planet-topografia.webp" alt="Planet Topografia e Cerqueira Torres" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/eco-rodovias-planet-topografia.webp" alt="Planet Topografia e Eco-Rodovias" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Elefe-engenharia-planet-topografia.webp" alt="Planet Topografia e Elefe Engenharia" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/essenza-conceito-taboao.webp" alt="Planet Topografia e Essenza Conceito Taboão" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/FBS-Planet-Topografia.webp" alt="Planet Topografia e FBS" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Geovector-engenharia-geomatica-planet-topografia.webp" alt="Planet Topografia e GEovector Engenharia" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/habcasa-incorporadora-e-contrutora.webp" alt="Planet Topografia e Habcasa Incorporadora e Construção" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/htf-planet-topografia.webp" alt="Planet Topografia e HTF" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/LSE-LABORATORIO-DE-SISTEMAS-ESTRUTURAIS.webp" alt="Planet Topografia e LSE Laboratório de Sistema Estruturais" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/mrv.webp" alt="Planet Topografia e MRV" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/porto-seguro-planet%20topografia.webp" alt="Planet Topografia e Porto Seguro" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/prefeitura-rio-grande-da-serra.webp" alt="Planet Topografia e Prefeitura do Rio Grande da Serra" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Procert-engenharia-planet-topografia.webp" alt="Planet Topografia e Procert Engenharia" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/vercelli-Engenharia-planet-topografia.webp" alt="Planet Topografia e Vercelli Engenharia" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/rmr-engenharia-planet-topografia.webp" alt="Planet Topografia e RMR Engenharia" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Roy-engenharia.webp" alt="Planet Topografia e Roy Engenharia" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Sao-paulo-governo-do-estado-planet-topografia.webp" alt="Planet Topografia e Governo do Estado de São Paulo" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/sst-engenharia.webp" alt="Planet Topografia e SST Engenharia" loading="lazy">
+            </div>
+<div class="cat-marcas-principal-item">
+                <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/tliq-planet-topografia.webp" alt="Planet Topografia e Tliq" loading="lazy">
+            </div>
+            <div class="cat-marcas-principal-item">
+              <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/Dubai-incorpracao-e-construcao-planet-topograia.webp" alt="Planet Topografia e Dubai Icorporação e Construção" loading="lazy">
+          </div>
+          <div class="cat-marcas-principal-item">
+            <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/durazzo-medeiros-advogados-planet-topografia.webp" alt="Planet Topografia e Durazzo Medeiros Advogados" loading="lazy">
+        </div>
+        <div class="cat-marcas-principal-item">
+          <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/or.webp" alt="Planet Topografia e Or" loading="lazy">
+      </div>
+      <div class="cat-marcas-principal-item">
+        <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/ozaki-engenharia.webp" alt="Planet Topografia e Ozaki Engenharia" loading="lazy">
+    </div>
+    <div class="cat-marcas-principal-item">
+      <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/transmac.webp" alt="Planet Topografia e Transmac" loading="lazy">
+  </div>
+  <div class="cat-marcas-principal-item">
+    <img width="240" height="133" src="https://www.planet-topografia.com.br/clientes/vercelli-Engenharia-planet-topografia.webp" alt="Planet Topografia e Vercelli Engenharia" loading="lazy">
+</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'Norte')">Norte</button>
+        <button class="tablink" onclick="openTab(event, 'Nordeste')">Nordeste</button>
+        <button class="tablink" onclick="openTab(event, 'Centro-Oeste')">Centro-Oeste</button>
+        <button class="tablink" onclick="openTab(event, 'Sudeste')">Sudeste</button>
+        <button class="tablink" onclick="openTab(event, 'Sul')">Sul</button>
+
+    </div>
+
+
+
+
+<div id="Norte" class="tabcontent">
+        <h3>Norte</h3>
+         <div class="norte-container"> <!-- Novo contêiner para organizar em grid -->
+        <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Belém</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Marabá</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Santana</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ji-Paraná </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Cruzeiro do Sul </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Manaus </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Boa Vista </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Rio Branco </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Macapá</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Vilhena </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Tucuruí   </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Abaetetuba</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Itaituba </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Novo Progresso </li>
+
+
+        </ul>
+         </div>
+
+    <div class="norte-estilo">
+        <ul>
+    <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Barueri</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Guarulhos</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Jundiaí</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Franca</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São José dos Campos</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Santarém </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Palmas</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Parauapebas</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Altamira</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Porto Velho </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Cacoal </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São Félix do Xingu</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Tailândia</li>
+
+        </ul>
+         </div>
+
+
+
+    <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ariquemes </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Humaitá </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Coari</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Tabatinga</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Parintins</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Caracaraí</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Oiapoque</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Xinguara</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Gurupi </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Araguaína</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Redenção</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Monte Alegre</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Breves </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Alenquer  </li>
+        </ul>
+         </div>
+</div>
+
+    </div>
+
+
+
+
+<div id="Nordeste" class="tabcontent">
+        <h3>Nordeste</h3>
+        <div class="norte-container"> <!-- Novo contêiner para organizar em grid -->
+        <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São Luís</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Imperatriz</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Teresina</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Fortaleza</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Natal</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Feira de Santana</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Juazeiro do Norte</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Mossoró </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Campina Grande </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ilhéus </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Parnaíba</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Sobral </li>
+
+        </ul>
+         </div>
+
+    <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Recife</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Caruaru</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Petrolina</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Garanhuns</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Maceió</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Paulo Afonso</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Juazeiro </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Camaçari </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Arapiraca </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Caicó </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Codó  </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Lagarto </li>
+
+        </ul>
+         </div>
+
+
+
+    <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Arapiraca</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Salvador</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Jequié</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Itabuna</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Aracaju</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Teixeira de Freitas</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Vitória da Conquista</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Aracaju</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Eunápolis </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Guanambi </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Barreiras </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Picos </li>
+
+
+
+        </ul>
+         </div>
+</div>
+    </div>
+
+
+
+
+<div id="Centro-Oeste" class="tabcontent">
+        <h3>Centro-Oeste</h3>
+         <div class="norte-container"> <!-- Novo contêiner para organizar em grid -->
+        <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Brasília</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Goiânia </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Cuiabá </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Campo Grande</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Anápolis </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Rondonópolis </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Sinop </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Dourados </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Naviraí</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Catalão </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Jataí </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Rondonópolis </li>
+
+
+
+        </ul>
+         </div>
+
+    <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Três Lagoas </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Lucas do Rio Verde </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Primavera do Leste </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Água Clara </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Rio Verde </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Tangará da Serra </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Itumbiara</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Coxim </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Nova Mutum </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Mineiros </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Sidrolândia</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Sorriso </li>
+
+
+
+        </ul>
+         </div>
+          <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Quirinópolis </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Chapadão do Sul </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Formosa </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ponta Porã </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Santo Antônio do Leverger</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Cáceres</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Barra do Garças </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Aparecida de Goiânia </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Senador Canedo </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Paranaíba </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Jaraguá </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Costa Rica </li>
+
+
+
+        </ul>
+         </div>
+
+
+
+</div>
+    </div>
+
+
+
+
+
+    <div id="Sudeste" class="tabcontent">
+        <h3>Sudeste</h3>
+             <div class="norte-container"> <!-- Novo contêiner para organizar em grid -->
+        <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São Paulo</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Rio de Janeiro </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Belo Horizonte </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Campinas </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Rio de Janeiro</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Niterói</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Vitória</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Santos </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Barueri </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Guarulhos </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Jundiaí </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Franca </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Itabira  </li>
+
+        </ul>
+         </div>
+
+    <div class="norte-estilo">
+        <ul>
+    <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ribeirão Preto</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Uberlândia </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Sorocaba </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São José dos Campos</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Taubaté </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Marília </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Piracicaba </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São João de Meriti</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Bauru </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Araraquara </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Sertãozinho </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Varginha  </li>
+
+
+        </ul>
+         </div>
+
+
+
+    <div class="norte-estilo">
+        <ul>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ipatinga </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Resende </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Votuporanga </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ourinhos </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Linhares </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Montes Claros </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Patos de Minas </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Barra Mansa </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Campos dos Goytacazes </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Volta Redonda </li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Itapetininga</li>
+            <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São João de Meriti </li>
+        </ul>
+         </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Sul" class="tabcontent">
+        <h3>Sul</h3>
+             <div class="norte-container"> <!-- Novo contêiner para organizar em grid -->
+        <div class="norte-estilo">
+        <ul>
+          <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Curitiba </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Porto Alegre</li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Florianópolis </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Foz do Iguaçu </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Blumenau </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Joinville </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Jaraguá do Sul  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Chapecó </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Umuarama  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Toledo  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Pato Branco  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Canoas  </li>
+
+        </ul>
+         </div>
+
+    <div class="norte-estilo">
+        <ul>
+      <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Pelotas </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Londrina </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Maringá </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Caxias do Sul </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ponta Grossa </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Cascavel </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Novo Hamburgo  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São Leopoldo  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Lajeado  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Concórdia  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Brusque  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Ijuí  </li>
+
+
+        </ul>
+         </div>
+
+
+
+    <div class="norte-estilo">
+        <ul>
+               <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Itajaí </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Criciúma </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Santa Maria </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Rio Grande </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Erechim </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Passo Fundo </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Arapongas </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Campo Largo  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> São Bento do Sul  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Guarapuava  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Francisco Beltrão  </li>
+        <li><strong> Mapeamento aéreo com Scanner Lidar em </strong> Vacaria  </li>
+        </ul>
+         </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section contact">
+      <h3>Contato</h3>
+      <p>📍 Rua Monte Alegre do Sul, 1220<br>Jardim Brasília - São Paulo<br>CEP 02.859-080</p>
+      <p>📧  contato@planet-topografia.com.br </p>
+      <p>📱 <a href="tel:+5511943076945">(11) 94307-6945</a></p>
+      <div class="social-icons social-espaco">
+      <a href="https://www.instagram.com/planet_topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-instagram.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.facebook.com/Planettopograffia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-facebook.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.youtube.com/@planet-topografia/"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-youtube.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.linkedin.com/company/planet-topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-linkedin.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+
+      </div>
+    </div>
+    <div class="footer-section links">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="https://www.planet-topografia.com.br/quem-somos">Quem Somos</a></li>
+        <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos">Soluções e Serviços</a></li>
+        <li><a href="https://www.planet-topografia.com.br/mapeamento-3d">Mapeamento 3D</a></li>
+        <li><a href="https://www.planet-topografia.com.br/projetos-entregues">Projetos Entregues</a></li>
+        <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia">Fale Conosco</a></li>
+      </ul>
+    </div>
+    <div class="footer-section services">
+      <h3>Serviços</h3>
+      <ul>
+        <li><a href="https://www.planet-topografia.com.br/mapeamento-3d">Mapeamento 3D</a></li>
+        <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais">Georreferenciamento de Imóveis</a></li>
+        <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo">Levantamento Topográfico</a></li>
+        <li><a href="">Soluções em Batimetria</a></li>
+        <li><a href="https://www.planet-topografia.com.br/acompanhamento-de-obras-em-sao-paulo-planet-topografia">Acompanhamento de Obras</a></li>
+      </ul>
+    </div>
+    <div class="footer-section help">
+      <h4>Precisa de Ajuda?</h4>
+      <p>Somos especializados em Mapeamento 3D, Georreferenciamento e Acompanhamento de Obras.</p>
+      <p><strong>Entre em contato agora para solicitar um orçamento ou esclarecer dúvidas.</strong></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+
+    <div class="certification">
+      <a class="text-light fw-bold" href="https://planet-topografia.com.br/">Copyright © 2024 Planet Topografia. </a>Todos os direitos reservados. <a rel="nofollow" href="https://validator.w3.org/check?uri=https://www.planet-topografia.com.br/" target="_blank" title="HTML5 W3C"><i class="fab fa-html5 "></i> <strong>W3C</strong></a>
+      <a rel="nofollow" href="http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri=https%3A%2F%2Fplanet-topografia.com.br%2F&usermedium=all&vextwarning=&warning=1
+" target="_blank" title="CSS W3C"><i class="fab fa-css3"></i> <strong>W3C</strong></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<a href="https://api.whatsapp.com/send?phone=5511943076945&text=Ol%C3%A1!%20Estou%20vindo%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida!" class="whatsapp-button" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+        <span class="icon"></span>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.planet-topografia.com.br/js/jquery-3.6.0.min.js"></script>
+
+
+    <script src="https://www.planet-topografia.com.br/js/slick.min.js"></script>
+    <script>
+
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const navMenu = document.querySelector('.navMenu');
+    const closeMenuButton = document.querySelector('.close-menu');
+
+    // Função para abrir o menu
+    const openMenu = () => {
+      navMenu.style.display = 'block';
+      menuOverlay.style.display = 'block';
+    };
+
+    // Função para fechar o menu
+    const closeMenu = () => {
+      navMenu.style.display = 'none';
+      menuOverlay.style.display = 'none';
+    };
+
+    menuToggle.addEventListener('click', openMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    closeMenuButton.addEventListener('click', closeMenu);
+
+
+
+
+
+
+// INICIO BANNER SERVICOS 
+
+    $(document).ready(function () {
+      $('.cat-servicos-principal-container').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        swipeToSlide: true, // Deslizamento livre
+        dots: true,
+
+        arrows: false,
+responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+      });
+  
+// FIM BANNER SERVICOS
+
+
+
+
+
+
+
+// INICIO BANNER PROJETOS
+
+
+$(document).ready(function () {
+            $('.cat-projetos-principal').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                swipeToSlide: true, // Deslizamento livre
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+// FIM BANNER PROJETOS
+
+
+
+
+
+// INICIO BANNER MARCAS
+  $(document).ready(function(){
+            $('.cat-marcas-principal').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true, // Habilita autoplay
+                autoplaySpeed: 1000, // Tempo entre os slides
+                swipeToSlide: true, // Deslizamento livre
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }
+                ]
+            });
+        });
+
+
+// FIM BANNER MARCAS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementsByClassName("tablink")[0].click();  // Open the first tab by default
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

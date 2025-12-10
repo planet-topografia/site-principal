@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projetos realizados pela Planet Topografia</title>
+    <meta name="description" content="Planet Topografia: serviços precisos de agrimensura com mais de 10 anos de experiência, equipe qualificada e equipamentos de alta precisão.">
+        <!-- Favicon -->
+    <link rel="icon" href="https://www.planet-topografia.com.br/img/favicon.png" />
+    <link rel="stylesheet" href="https://www.planet-topografia.com.br/css/slick.min.css">
+    <link rel="preload" as="image" href="https://www.planet-topografia.com.br/img/planet-topografia-papel-de-parede.webp">
+
+
+    <style>
+          /* INICIO GERAL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+
+    .text-center {
+        text-align: center !important;
+        margin-bottom: 3rem !important;
+        margin-top: 6rem !important;
+        color: #10aaa8 !important;
+    }
+    a {
+        text-decoration: none;
+        color: #10aaa8
+    }
+
+    .mb-4{margin-bottom:1.5rem !important}
+
+        span.sub-titulo-dif {
+        font-weight: 100;
+        font-size: 1.85rem;
+    }
+
+    .text-primary.text-uppercase {
+        color: #10aaa8 !important;
+        font-size: 1.25rem;
+
+    }
+    .display-3 {
+        color: #050a0e;
+        font-size: 2em!important;
+    }
+
+
+    /* Container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* Cabeçalho */
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        background-image: linear-gradient(310deg, #12A99F 0%, #FFFFFF 96%);
+    }
+
+    .logo {
+        text-align: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info {
+        display: grid;
+        grid-template-rows: auto auto;
+
+    }
+
+    .info .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #10aaa8;
+        padding: 14px 26px;
+        color: #f9f9f9;
+        padding-right: 6rem !important;
+    }
+
+    .info .top .social-icons {
+        display: flex;
+        gap: 4px;
+    }
+
+    a.bord-icons {
+        border: 1px solid #3b0000;
+        border-radius: 50% !important;
+        padding: 7px 0px;
+        display: flex;
+    }
+    img.icon-top-principal {
+        width: 29px;
+        height: 16px;
+    }
+    .info .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 0px;
+        padding-right: 6rem !important;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-size: 0.775rem;
+    padding: 4px 10px;
+    display: flex
+;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    nav ul li a:hover {
+        color: #005453;
+    }
+
+
+    nav ul li a.active {
+        color: #fff;
+    }
+
+    nav ul  li > a::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 0;
+        top: 5px;
+        background: transparent;
+        transition: all 0.3s;
+    }
+
+    nav ul  li  > a:hover::after, li > a.active-nav::after {
+        width: 100%;
+        background: #9bfffe;
+    }
+
+
+     .btn-orcamento {
+        padding: 6px 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 100;
+        transition: background-color 0.3s;
+            background-color: #14262a;
+    border: 1px solid #000000;
+    }
+
+    .btn-orcamento:hover {
+        background-color: #00a09e;
+    }
+
+
+    /* Estilos do menu responsivo */
+    .menu-toggle {
+      display: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 37px;
+    background-color: #5ec5be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    }
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+    nav {
+      position: relative;
+    }
+
+    nav ul {
+      flex-direction: row;
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr;
+        text-align: center;
+               padding: 27px;
+      }
+.info   {
+
+    display: none;
+}
+
+      .menu-toggle {
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        /* float: right !important;*/
+      }
+
+
+
+
+
+
+
+      nav ul {
+display: none;
+        flex-direction: column;
+        /* background-color: #fff; */
+        /* border: 1px solid #ddd; */
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+
+        position: relative;
+
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      nav ul li:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+
+.menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+.navMenu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .navMenu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .navMenu ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navMenu ul li a:hover {
+      color: #007BFF;
+    }
+
+    .navMenu .close-menu {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #333;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+
+
+
+        @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navMenu {
+        width: 75%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu li{
+position:relative;
+/*float:left; */
+z-index: 9999!important;
+}
+
+
+.menu li a{height: 24px;color:#333; text-decoration:none;   display:block;}
+
+.menu li a:hover{
+background: #10aaa8;
+    color: #fff;
+}
+
+.menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+width: max-content;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border: 0.1px solid #f9f9f9;
+    display: block;
+    width: 100%;
+}
+
+p.sub-principal {
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Inicio banner topo */
+/* Banner topo otimizado */
+.banner-topo-para {
+    position: relative;
+
+    background-image: url('https://www.planet-topografia.com.br/img/planet-topografia-papel-de-parede.webp'); /* Imagem otimizada */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.banner-topo-para .banner-topo-para-wrapper {
+    width: 100%;
+}
+
+.banner-topo-para .banner-topo-para-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 58px;
+    border-radius: 8px;
+
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.banner-topo-para h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner-topo-para .banner-topo-para-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.banner-topo-para .banner-topo-para-buttons a {
+    text-decoration: none;
+    color: #c8ebe9;
+    background: #10aaa8;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    border: 1px solid #9bfffe;
+    font-size: 1rem;
+}
+
+.banner-topo-para .banner-topo-para-buttons a:first-child:hover {
+    background: #fff;
+    color: #10aaa8;
+}
+
+.banner-topo-para .banner-topo-para-buttons a:hover {
+    background: #036967;
+}
+
+@media (max-width: 768px) {
+    .banner-topo-para h1 {
+        font-size: 2rem;
+    }
+
+    .banner-topo-para .banner-topo-para-buttons a {
+        padding: 8px 16px;
+    }
+}
+
+
+/* fim banner topo */
+
+
+
+
+
+
+
+
+
+
+/* INICIO BANNER PROJETOS Principal */
+
+
+  .cat-projetos-principal-container {
+            max-width: 1260px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .slick-slide {
+            outline: none;
+        }
+
+        .cat-projetos-principal-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 15px;
+        }
+
+        .cat-projetos-principal-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cat-projetos-principal-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .cat-projetos-principal-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .cat-projetos-principal-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .cat-projetos-principal-card button {
+            background-color: #10aaa8;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cat-projetos-principal-card button:hover {
+            background-color: #147372;
+        }
+
+
+/* FIM BANNER PROJETOS Principal */
+
+
+
+/* inicio Galeria de imagens */
+
+
+ .gallery-container {
+            width: 100%;
+
+            margin: 0 auto;
+            background: #ffffff;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+
+            padding-top: 50px;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            /* font-weight: bold; */
+            color: #10aaa8;
+            border: 1px solid #10aaa8;
+            /* border-radius: 30px; */
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #10aaa8;
+            color: #fff;
+        }
+
+        .tab.active {
+                background-color: #10aaa8;
+    color: #fff;
+    border: 1px solid #9bfffe;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .image-grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-grid-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .image-grid-item img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        .image-grid-item .image-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-grid-item:hover .image-title {
+            opacity: 1;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .tab {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .image-grid {
+                gap: 15px;
+            }
+        }
+
+
+
+/* Fim Galeria de imagens */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 60px 0px 0px;
+}
+.social-espaco {
+    margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+      color: #10aaa8;
+}
+
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+      color: #fff;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+}
+
+.footer-section ul li a:hover {
+  color: #00adb5;
+}
+
+.contact .social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+.social-icons {
+    filter: invert(1);
+}
+
+.contact .social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.help {
+  background-color: #00adb5;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #111;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.certification a img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+
+
+  footer {
+
+    text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-section h3 {
+    font-size: 33px;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    font-size: 20px;
+  }
+}
+
+
+/* inicio botao whatsapp flutuante principal */
+            .whatsapp-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                background-color: #10aaa8;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                animation: pulse 1.5s infinite;
+                transition: transform 0.3s ease;
+            }
+
+            .whatsapp-button:hover {
+                transform: scale(1.1);
+            }
+
+       .whatsapp-button .icon {
+    width: 30px;
+    height: 30px;
+    color: #333;
+    fill: #fff !important;
+    background-image: url(https://www.planet-topografia.com.br/img/botao-whatsapp-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+            /* Animação da Borda Pulsante */
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgb(16 170 168);
+                }
+
+                70% {
+                    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+                }
+
+                100% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                }
+            }
+
+            /* fim botao whatsapp flutuante principal */
+
+
+
+    </style>
+
+
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFQ2BBT5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFQ2BBT5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Cabeçalho -->
+    <header>
+    <div class="logo">
+    <a href="https://www.planet-topografia.com.br/">
+      <img  src="https://www.planet-topografia.com.br/img/logo-planet-topografia.png" alt="Planet Topografia Georeferenciamento" width="184" height="80" loading="lazy"></a>
+<button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+    </div>
+
+    <div class="info">
+      <div class="top">
+
+        <span> ✉ contato@planet-topografia.com.br</span>
+
+        <div class="social-icons">
+          <a class="bord-icons" href="https://www.instagram.com/planet_topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-instagram.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.facebook.com/Planettopograffia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-facebook.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.youtube.com/@planet-topografia/"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-youtube.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a class="bord-icons" href="https://www.linkedin.com/company/planet-topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-linkedin.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+
+        </div>
+      </div>
+      <div class="bottom">
+        <nav>
+          <ul>
+            <li><a href="https://www.planet-topografia.com.br/" class="nav-item nav-link ">INICIO</a></li>
+            <li><a href="https://www.planet-topografia.com.br/quem-somos" class="nav-item nav-link ">QUEM SOMOS</a></li>
+            <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos" class="nav-item nav-link ">SOLUÇÕES E SERVIÇOS</a></li>
+            <li><a class="active-nav" href="https://www.planet-topografia.com.br/projetos-entregues" class="nav-item nav-link ">PROJETOS</a></li>
+            <li><a href="https://www.planet-topografia.com.br/clientes" class="nav-item nav-link ">CLIENTES</a></li>
+
+<li>
+
+            <ul class="menu ">
+
+                  <li><a href="#">INFORMAÇÕES</a>
+                <ul>
+                    <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-drone-matrice-350-rtk-scanner-lidar-zenmuse-l2 " class="dropdown-item ">Mapeamento aéreo com Drone Matrice 350 RTK</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-3d" class="dropdown-item ">Mapeamento 3D</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-com-lidar" class="dropdown-item  ">Mapeamento Aéreo com LIDAR</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo" class="dropdown-item ">Levantamento Topográfico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/topografia-na-construcao-civil" class="dropdown-item ">Topografia na construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/Levantamento-planialtimetrico-cadastral" class="dropdown-item   ">Levantamento planialtimétrico cadastral</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/empresa-de-topografia-em-sao-paulo" class="dropdown-item   ">Empresa de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-planialtimetrico-sao-paulo" class="dropdown-item ">Levantamento Planialtimétrico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/servicos-de-topografia-em-sao-paulo" class="dropdown-item ">Serviços de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais" class="dropdown-item ">Georreferenciamento de Imóveis Rurais</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-em-projetos-de-construcao-civil" class="dropdown-item  ">A importância da topografia em projetos de construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-para-evitar-problemas-em-obras" class="dropdown-item ">A importância da topografia para evitar problemas em obras</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/os-principais-equipamentos-utilizados-em-levantamentos-topograficos" class="dropdown-item ">Equipamentos utilizados em levantamentos topográficos</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/beneficios-do-mapeamento-aéreo-na-topografia" class="dropdown-item ">Benefícios do mapeamento aéreo na topografia</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/nocoes-fundamentais-de-topografia" class="dropdown-item ">Noções Fundamentais de Topografia
+</a> </li>
+<li><a href="https://www.planet-topografia.com.br/escolha-a-empresa-de-topografia-certa" class="dropdown-item ">Empresa de Topografia certa</a> </li>
+<li><a href="https://www.planet-topografia.com.br/topografia-e-georeferenciamento" class="dropdown-item ">Topografia e georreferenciamento</a> </li>
+<li><a href="https://www.planet-topografia.com.br/o-futuro-da-topografia" class="dropdown-item ">O Futuro da Topografia</a> </li>
+
+                </ul>
+            </li>
+</ul>
+</li>
+            <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia" class="nav-item nav-link ">CONTATO</a></li>
+          </ul>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=5511943076945&text=Ol%C3%A1!%20Preciso%20de%20um%20OR%C3%87AMENTO%20para%20o%20seguinte%20servi%C3%A7o:%20" class="btn-orcamento">ORÇAMENTO</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay para escurecer o fundo -->
+  <div class="menu-overlay" role="presentation" aria-hidden="true"></div>
+
+  <!-- Menu lateral -->
+  <div class="navMenu" aria-hidden="true" role="menu">
+    <button class="close-menu" aria-label="Fechar Menu">✖</button>
+    <ul>
+      <li><a href="https://www.planet-topografia.com.br/">INICIO</a></li>
+      <li><a href="https://www.planet-topografia.com.br/quem-somos">QUEM SOMOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos">SOLUÇÕES E SERVIÇOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/projetos-entregues">PROJETOS</a></li>
+      <li><a href="https://www.planet-topografia.com.br/clientes">CLIENTES</a></li>
+<li>
+      <ul class="menu    ">
+
+                  <li><a href="#">INFORMAÇÕES</a>
+                <ul>
+                    <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-drone-matrice-350-rtk-scanner-lidar-zenmuse-l2 " class="dropdown-item ">Mapeamento aéreo com Drone Matrice 350 RTK</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-3d" class="dropdown-item ">Mapeamento 3D</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/mapeamento-aereo-com-lidar" class="dropdown-item  ">Mapeamento Aéreo com LIDAR</a></li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo" class="dropdown-item ">Levantamento Topográfico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/topografia-na-construcao-civil" class="dropdown-item ">Topografia na construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/Levantamento-planialtimetrico-cadastral" class="dropdown-item   active">Levantamento planialtimétrico cadastral</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/empresa-de-topografia-em-sao-paulo" class="dropdown-item   ">Empresa de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/levantamento-planialtimetrico-sao-paulo" class="dropdown-item ">Levantamento Planialtimétrico São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/servicos-de-topografia-em-sao-paulo" class="dropdown-item ">Serviços de Topografia São Paulo</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais" class="dropdown-item ">Georreferenciamento de Imóveis Rurais</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-em-projetos-de-construcao-civil" class="dropdown-item  ">A importância da topografia em projetos de construção civil</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/a-importancia-da-topografia-para-evitar-problemas-em-obras" class="dropdown-item ">A importância da topografia para evitar problemas em obras</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/os-principais-equipamentos-utilizados-em-levantamentos-topograficos" class="dropdown-item ">Equipamentos utilizados em levantamentos topográficos</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/beneficios-do-mapeamento-aéreo-na-topografia" class="dropdown-item ">Benefícios do mapeamento aéreo na topografia</a> </li>
+                      <li><a href="https://www.planet-topografia.com.br/nocoes-fundamentais-de-topografia" class="dropdown-item ">Noções Fundamentais de Topografia
+</a> </li>
+<li><a href="https://www.planet-topografia.com.br/escolha-a-empresa-de-topografia-certa" class="dropdown-item ">Empresa de Topografia certa</a> </li>
+<li><a href="https://www.planet-topografia.com.br/topografia-e-georeferenciamento" class="dropdown-item ">Topografia e georreferenciamento</a> </li>
+<li><a href="https://www.planet-topografia.com.br/o-futuro-da-topografia" class="dropdown-item ">O Futuro da Topografia</a> </li>
+
+                </ul>
+            </li>
+</ul>
+</li>
+      <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia">CONTATO</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+<section class="banner-topo-para">
+    <div class="banner-topo-para-wrapper">
+        <div class="banner-topo-para-content">
+            <h1>Projetos Entregues</h1>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<div class="cat-projetos-principal-container">
+        <div class="cat-projetos-principal">
+            <div class="cat-projetos-principal-card">
+                <img src="https://www.planet-topografia.com.br/img/obra-linha-6-laranja-do-metro-em-sao-paulo.webp" alt="Obra na Linha 6 Laranja do Metrô de São Paulo" loading="lazy">
+                <h3>Obra na Linha 6 Laranja do Metrô de São Paulo </h3>
+                <p>Com excelência, contribuímos para o avanço da Linha 6-Laranja do Metrô de São Paulo. A Planet Topografia trouxe soluções inovadoras e sustentáveis que garantiram agilidade, segurança e qualidade durante a execução da obra, marcando um impacto positivo na infraestrutura da cidade.</p>
+
+
+                <a href="https://www.planet-topografia.com.br/linha-6-laranja-do-metro-em-sao-paulo" target="_blank">
+                <button>VER MAIS DETALHES</button></a>
+            </div>
+            <div class="cat-projetos-principal-card">
+                <img src="https://www.planet-topografia.com.br/img/obra-ure-baueri-em-sao-paulo-primeira-usina-waste-to-energy-da-america-latina.webp" alt="Obra em Ure-Baueri na Primeira Usina Waste to Energy da América Latina" loading="lazy">
+                <h3>Obra em Ure-Baueri na Primeira Usina Waste to Energy da América Latina</h3>
+                <p>A Planet Topografia foi responsável por serviços essenciais na obra, como locação de eixos estruturais, alinhamento de formas, marcação de estacas, levantamentos para drenagem e pavimentação, além de cálculos volumétricos e desenhos técnicos em AutoCAD.</p>
+                <a href="https://www.planet-topografia.com.br/topografia-obra-ure-baueri-primeira-usina-waste-to-energy"> <button>VER MAIS DETALHES</button></a>
+            </div>
+            <div class="cat-projetos-principal-card">
+                <img src="https://www.planet-topografia.com.br/img/ampliacao-do-galpao-da-aint-gobain-em-mogi-das-cruzes.webp" alt="Ampliação do Galpão da Saint Gobain em Mogi das Cruzes" loading="lazy">
+                <h3>Ampliação do Galpão da Saint Gobain em Mogi das Cruzes</h3>
+                <p>A Planet Topografia teve a satisfação de contribuir para o projeto de ampliação do galpão da Saint-Gobain, localizado em Mogi das Cruzes, com serviços de topografia de alta precisão e qualidade. </p>
+                <a href="https://www.planet-topografia.com.br/ampliacao-do-galpao-da-saint-gobain-em-mogi-das-cruzes"><button>VER MAIS DETALHES</button></a>
+            </div>
+            <div class="cat-projetos-principal-card">
+                <img src="https://www.planet-topografia.com.br/img/servico-planet-topografia-rodoanel-em-sao-paulo.webp" alt="Obra realizada no Rodoanel em Säo Paulo" loading="lazy">
+                <h3>Obra realizada no Rodoanel em São Paulo</h3>
+                <p>No projeto do Rodoanel em São Paulo, a Planet Topografia desempenhou um papel crucial, fornecendo serviços especializados de topografia. As atividades incluíram levantamentos topográficos detalhados, monitoramento de obras, locação de pontos estratégicos e controle geométrico, garantindo precisão nos alinhamentos e no nivelamento do projeto.</p>
+                <a href="https://www.planet-topografia.com.br/obra-realizada-no-rodoanel-em-sao-paulo"><button>VER MAIS DETALHES</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<div class="text-center">
+            <span class="text-primary">Planet Topografia</span>
+            <h2 class="display-3">PROJETOS REALIZADOS </h2 >
+        </div>
+<div class="gallery-container">
+        <div class="tabs">
+            <div class="tab active" data-tab="Linha-6-laranja">Linha 6-Laranja de metrô</div>
+            <div class="tab" data-tab="Primeira-usina-sao-paulo">Primeira Usina Waste To Energy da América Latina </div>
+            <div class="tab" data-tab="Parelheiros-Mananciais">Parelheiros - Mananciais</div>
+            <div class="tab" data-tab="Empreendimento-habita-6">Empreendimento habita 6 SPE</div>
+            <div class="tab" data-tab="obra-bimbo">Obra Bimbo</div>
+        </div>
+        <div id="Linha-6-laranja" class="tab-content active">
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(1).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(2).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(3).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(4).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(5).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(6).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(7).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(8).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(9).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(10).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(11).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(12).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(13).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(14).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(15).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(16).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(17).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(18).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(19).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/servico-de-topografia-na-linha-6-laranja-do-metro-em-sao-paulo(20).jpg" alt="Linha 6-Laranja de metrô">
+                    <div class="image-title">Linha 6-Laranja de metrô</div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="Primeira-usina-sao-paulo" class="tab-content">
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo1.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo3.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo5.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo2.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo4.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo6.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo7.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo8.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo9.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo10.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo11.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo12.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo13.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo14.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo15.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo16.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo17.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo18.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo19.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+                 <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/primeira-usina-waste-to-energy/primeira-usina-waste-to-energy-da-america-latina-em-sao-paulo20.jpg" alt="Primeira Usina Waste To Energy da América Latina">
+                    <div class="image-title">Primeira Usina Waste To Energy da América Latina</div>
+                </div>
+
+            </div>
+        </div>
+        <div id="Parelheiros-Mananciais" class="tab-content">
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo1.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo2.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo3.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo4.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo5.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo6.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo7.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo8.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo9.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo10.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo11.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/parelheiros/parelheiros-mancial-em-sao-paulo12.jpg" alt="PARELHEIROS - MANANCIAIS">
+                    <div class="image-title">PARELHEIROS - MANANCIAIS</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="Empreendimento-habita-6" class="tab-content">
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo1.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo2.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo3.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo4.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo5.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo6.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo7.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo9.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo10.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo11.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo12.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/habita-6/Empreendimento-habita-6-em-sao-paulo8.jpg" alt="Empreendimento habita 6 SPE">
+                    <div class="image-title">Empreendimento habita 6 SPE</div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+      <div id="obra-bimbo" class="tab-content">
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/bimbo/Obra-bimbo1.jpg" alt="Obra Bimbo">
+                    <div class="image-title">Obra Bimbo</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/bimbo/Obra-bimbo2.jpg" alt="Obra Bimbo">
+                    <div class="image-title">Obra Bimbo</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/bimbo/Obra-bimbo3.jpg" alt="Obra Bimbo">
+                    <div class="image-title">Obra Bimbo</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/bimbo/Obra-bimbo4.jpg" alt="Obra Bimbo">
+                    <div class="image-title">Obra Bimbo</div>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://www.planet-topografia.com.br/projetos/bimbo/Obra-bimbo5.jpg" alt="Obra Bimbo">
+                    <div class="image-title">Obra Bimbo</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section contact">
+      <h3>Contato</h3>
+      <p>📍 Rua Monte Alegre do Sul, 1220<br>Jardim Brasília - São Paulo<br>CEP 02.859-080</p>
+      <p>📧  contato@planet-topografia.com.br </p>
+      <p>📱 <a href="tel:+5511943076945">(11) 94307-6945</a></p>
+      <div class="social-icons social-espaco">
+      <a href="https://www.instagram.com/planet_topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-instagram.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.facebook.com/Planettopograffia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-facebook.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.youtube.com/@planet-topografia/"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-youtube.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+          <a href="https://www.linkedin.com/company/planet-topografia"  ><img  width="20" height="20" src="https://www.planet-topografia.com.br/img/icon-linkedin.svg" alt="Imagem Centralizada" class="icon-top-principal"></a>
+
+      </div>
+    </div>
+    <div class="footer-section links">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="https://www.planet-topografia.com.br/quem-somos">Quem Somos</a></li>
+        <li><a href="https://www.planet-topografia.com.br/solucoes-e-servicos">Soluções e Serviços</a></li>
+        <li><a href="https://www.planet-topografia.com.br/mapeamento-3d">Mapeamento 3D</a></li>
+        <li><a href="https://www.planet-topografia.com.br/projetos-entregues">Projetos Entregues</a></li>
+        <li><a href="https://www.planet-topografia.com.br/contato-planet-topografia">Fale Conosco</a></li>
+      </ul>
+    </div>
+    <div class="footer-section services">
+      <h3>Serviços</h3>
+      <ul>
+        <li><a href="https://www.planet-topografia.com.br/mapeamento-3d">Mapeamento 3D</a></li>
+        <li><a href="https://www.planet-topografia.com.br/georreferenciamento-de-imoveis-rurais">Georreferenciamento de Imóveis</a></li>
+        <li><a href="https://www.planet-topografia.com.br/levantamento-topografico-sao-paulo">Levantamento Topográfico</a></li>
+        <li><a href="">Soluções em Batimetria</a></li>
+        <li><a href="https://www.planet-topografia.com.br/acompanhamento-de-obras-em-sao-paulo-planet-topografia">Acompanhamento de Obras</a></li>
+      </ul>
+    </div>
+    <div class="footer-section help">
+      <h4>Precisa de Ajuda?</h4>
+      <p>Somos especializados em Mapeamento 3D, Georreferenciamento e Acompanhamento de Obras.</p>
+      <p><strong>Entre em contato agora para solicitar um orçamento ou esclarecer dúvidas.</strong></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+
+    <div class="certification">
+      <a class="text-light fw-bold" href="https://planet-topografia.com.br/">Copyright © 2024 Planet Topografia. </a>Todos os direitos reservados. <a rel="nofollow" href="https://validator.w3.org/check?uri=https://www.planet-topografia.com.br/" target="_blank" title="HTML5 W3C"><i class="fab fa-html5 "></i> <strong>W3C</strong></a>
+      <a rel="nofollow" href="http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri=https%3A%2F%2Fplanet-topografia.com.br%2F&usermedium=all&vextwarning=&warning=1
+" target="_blank" title="CSS W3C"><i class="fab fa-css3"></i> <strong>W3C</strong></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<a href="https://api.whatsapp.com/send?phone=5511943076945&text=Ol%C3%A1!%20Estou%20vindo%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida!" class="whatsapp-button" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+        <span class="icon"></span>
+    </a>
+
+
+
+
+
+
+<script src="https://www.planet-topografia.com.br/js/jquery-3.6.0.min.js"></script>
+
+
+    <script src="https://www.planet-topografia.com.br/js/slick.min.js"></script>
+
+
+    <script>
+
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const navMenu = document.querySelector('.navMenu');
+    const closeMenuButton = document.querySelector('.close-menu');
+
+    // Função para abrir o menu
+    const openMenu = () => {
+      navMenu.style.display = 'block';
+      menuOverlay.style.display = 'block';
+    };
+
+    // Função para fechar o menu
+    const closeMenu = () => {
+      navMenu.style.display = 'none';
+      menuOverlay.style.display = 'none';
+    };
+
+    menuToggle.addEventListener('click', openMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    closeMenuButton.addEventListener('click', closeMenu);
+
+
+// INICIO BANNER PROJETOS
+
+
+$(document).ready(function () {
+            $('.cat-projetos-principal').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                swipeToSlide: true, // Deslizamento livre
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+// FIM BANNER PROJETOS
+
+
+
+
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                const content = document.getElementById(tab.dataset.tab);
+                content.classList.add('active');
+            });
+        });
+
+
+
+
+
+</script>
+</body>
+</html>
