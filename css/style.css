@@ -756,3 +756,53 @@ display:none;
         padding: 10px;
     }
 }
+
+
+
+   /* inicio botao whatsapp flutuante principal */
+            .whatsapp-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                background-color: #10aaa8;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                animation: pulse 1.5s infinite;
+                transition: transform 0.3s ease;
+            }
+
+            .whatsapp-button:hover {
+                transform: scale(1.1);
+            }
+
+       .whatsapp-button .icon {
+    width: 30px;
+    height: 30px;
+    color: #333;
+    fill: #fff !important;
+    background-image: url(https://www.planet-topografia.com.br/img/botao-whatsapp-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+            /* Animação da Borda Pulsante */
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgb(16 170 168);
+                }
+
+                70% {
+                    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+                }
+
+                100% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                }
+            }
+
+            /* fim botao whatsapp flutuante principal */
